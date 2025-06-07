@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "fasta",
+      "camelcase": "Fasta",
+      "title": "Fasta",
+      "scope": "source.fasta",
+      "file-types": ["faa", "fna", "fasta", "ffn", "frn", "fa", "fas", "mpfa"],
+      "injection-regex": "^fasta$",
+      "class-name": "TreeSitterFasta"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Fasta file parser",
+    "authors": [
+      {
+        "name": "Will Gebbie",
+        "email": "will.gebbie777@gmail.com",
+        "url": "https://github.com/will-gebbie"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/will-gebbie/tree-sitter-fasta"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
+

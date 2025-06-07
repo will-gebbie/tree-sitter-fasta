@@ -1,0 +1,9 @@
+session_name: tree-sitter
+windows:
+  - window_name: code
+    panes:
+      - nvim .
+  - window_name: misc
+    panes:
+      - ls
+

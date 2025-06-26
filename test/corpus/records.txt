@@ -1,0 +1,20 @@
+==================
+Records
+==================
+
+>CP01323.1 alien bacteria
+ATGCAAATTTGGGCCC
+
+---
+
+(source_file
+  (record_definition
+    (id
+      (id_text))
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_combo
+        (sequence_text)
+        (newline)))))

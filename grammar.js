@@ -17,20 +17,20 @@ module.exports = grammar({
 
     record_definition: ($) => seq(">", $.id, $.description, $.sequence),
 
-    id: ($) => optional($.header_text),
+    id: ($) => $.id_text,
 
-    description: ($) => seq($.header_text, $.newline),
+    description: ($) => seq($.description_text, $.newline),
 
-    sequence: ($) => repeat($.seqeunce_combo),
+    sequence: ($) => repeat1($.sequence_combo),
 
     sequence_combo: ($) => seq($.sequence_text, $.newline),
 
-    // TODO: Add all valid chars in regex for id and description
-    header_text: ($) => /[a-z]+/,
+    id_text: ($) => /[!-~]+/,
 
-    new_line: ($) => /[\r?\n]/,
+    description_text: ($) => /[ -~]+/,
 
-    // TODO: Only allow fasta codes from https://en.wikipedia.org/wiki/FASTA_format
-    seqeunce_text: ($) => /[a-z]+/,
+    newline: ($) => /[\r?\n]/,
+
+    sequence_text: ($) => /[a-zA-Z*-]+/,
   },
 });

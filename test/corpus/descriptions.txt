@@ -1,0 +1,26 @@
+==================
+No Newline
+:error
+==================
+
+>CP01323.1 alien bacteria ATGCAAATTTGGGCCC
+---
+
+==================
+No Description
+==================
+
+>CP01323.1
+ATGCAAATTTGGGCCC
+---
+
+(source_file
+  (record_definition_no_description
+    (id
+      (id_text))
+    (newline)
+    (sequence
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+

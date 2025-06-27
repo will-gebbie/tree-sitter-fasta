@@ -1,0 +1,64 @@
+==================
+Space in ID
+:error
+==================
+
+>  CP01323.1 alien bacteria
+ATGCAAATTTGGGCCC
+
+---
+
+==================
+> inside ID
+:error
+==================
+
+>CP0>1323.1 alien bacteria
+ATGCAAATTTGGGCCC
+---
+
+==================
+No ID and No Description
+:error
+==================
+
+>
+ATGCAAATTTGGGCCC
+---
+
+==================
+Missing >
+:error
+==================
+
+CP01323.1 alien bacteria
+ATGCAAATTTGGGCCC
+ATGCAAATTGCATACC
+ATGCAAATTTGGGCCC
+ATGCAAATCCCGGCCC
+ATGCAAAAAAGGGCCC
+ATGGCTCATTTGGGCC
+---
+
+==================
+Multi-record missing >
+:error
+==================
+
+>CP01323.1 alien bacteria
+ATGCAAATTTGGGCCC
+ATGCAAATTGCATACC
+ATGCAAATTTGGGCCC
+ATGCAAATCCCGGCCC
+ATGCAAAAAAGGGCCC
+ATGGCTCATTTGGGCC
+
+CP01623.1 alien bacteria 42
+ATGCAAATTTGGGCCC
+ATGCAAATTGCATACC
+ATGCAAATTTGGGCCC
+ATGCAAATCCCGGCCC
+ATGCAAGAAAGGGCCC
+ATGGCTCATTTGGGCC
+---
+

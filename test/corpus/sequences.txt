@@ -1,0 +1,220 @@
+==================|||
+DNA (Mixed Case)
+==================|||
+
+>CP01323.1 alien bacteria
+AtGCaAAtttGGgCCC
+>All Possible Nucleotides
+aCgturykMS-WBdHvN
+---|||
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+
+==================|||
+RNA (Mixed Case)
+==================|||
+
+>WP_Z923234234234234.1 Thiotimoline chrono-hydrolase
+AuGCaAAuuuGGgCCC
+---|||
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+
+==================|||
+Amino Acids (Mixed Case)
+==================|||
+
+>WP_Z923234234234234.1 Thiotimoline chrono-hydrolase
+MQIWA*
+>All possible Amino Acids
+ABCDEFGfhijkLMNOPQrsTuvwYzx*-
+---|||
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+
+==================|||
+Multiple Sequence Alignment (MSA)
+==================|||
+
+>Methylacidiphilum_kamchatkense_Kam1_Ga0070832_103
+-----------------MLL---------------------------VVGKRRLPA---K
+KTKKKEVQVSGLRQIAFYGKGGIGKSTTSQNTLAALAEMGQRILIVGCDPKADSTRLILH
+SKAQDTILHLAAQAGSVEDLEIEDVMKIGYRNIRCVESGGPEPGVGCAGRGVITSINFLE
+ENGAY-EDIDYVSYDVLGDVVCGGFAMPIRENKAQEIYIVMSGEMMAMYAANNICKGILK
+YANSGGVRLGGLICNERKTDREYDLADALAKRLGSKLIHFVPRDNVVQHAELRRMTVIEY
+APDCKQADEYRALAKKIHENAGKGVIPKPVTMDELEDLLMEFGIMKKEDESLIGKAKVEE
+EA-------AVC----------V
+>Ga0441272_01_Methylacidiphilum_fumariolicum_Fur
+------------------------------------------------------------
+--------VSGLRQIAFYGKGGIGKSTTSQNTLAALAEMGQRILIVGCDPKADSTRLILH
+SKAQDTILHLAAQAGSVEDLEIEDVMKIGYRNIRCVESGGPEPGVGCAGRGVITSINFLE
+ENGAY-EDIDYVSYDVLGDVVCGGFAMPIRENKAQEIYIVMSGEMMAMYAANNICKGILK
+YANSGGVRLGGLICNERKTDREYDLADALAKRLGSKLIHFVPRDNVVQHAELRRMTVIEY
+APDSKQADEYRALAKKIHENAGKGVIPKPVTMDELEDLLMEFGIMKKEDESLIGKAKVEE
+EA-------AVC----------V
+>Ga0441274_23_Methylacidiphilum_fumariolicum_Fdl
+------------------------------------------------------------
+--------VSGLRQIAFYGKGGIGKSTTSQNTLAALAEMGQRILIVGCDPKADSTRLILH
+SKAQDTILHLAAQAGSVEDLEIEDVMKIGYRNIRCVESGGPEPGVGCAGRGVITSINFLE
+ENGAY-EDIDYVSYDVLGDVVCGGFAMPIRENKAQEIYIVMSGEMMAMYAANNICKGILK
+YANSGGVRLGGLICNERKTDREYDLADALAKRLGSKLIHFVPRDNVVQHAELRRMTVIEY
+APDSKQADEYRALAKKIHENAGKGVIPKPVTMDELEDLLMEFGIMKKEDESLIGKAKVEE
+EA-------AVC----------V
+---|||
+
+(source_file
+  (record_definition_no_description
+    (id
+      (id_text))
+    (newline)
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_no_description
+    (id
+      (id_text))
+    (newline)
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))))) 
+  (record_definition_no_description
+    (id
+      (id_text))
+    (newline)
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))

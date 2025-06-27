@@ -34,7 +34,7 @@
     }
   },
   {
-    "type": "record_definition",
+    "type": "record_definition_description",
     "named": true,
     "fields": {},
     "children": {
@@ -47,6 +47,33 @@
         },
         {
           "type": "id",
+          "named": true
+        },
+        {
+          "type": "sequence",
+          "named": true
+        },
+        {
+          "type": "space",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "record_definition_no_description",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "newline",
           "named": true
         },
         {
@@ -65,14 +92,48 @@
       "required": true,
       "types": [
         {
-          "type": "sequence_combo",
+          "type": "sequence_choice",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "sequence_combo",
+    "type": "sequence_EOF",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "sequence_text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sequence_choice",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "sequence_EOF",
+          "named": true
+        },
+        {
+          "type": "sequence_newline",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sequence_newline",
     "named": true,
     "fields": {},
     "children": {
@@ -100,15 +161,15 @@
       "required": false,
       "types": [
         {
-          "type": "record_definition",
+          "type": "record_definition_description",
+          "named": true
+        },
+        {
+          "type": "record_definition_no_description",
           "named": true
         }
       ]
     }
-  },
-  {
-    "type": ">",
-    "named": false
   },
   {
     "type": "description_text",
@@ -124,6 +185,10 @@
   },
   {
     "type": "sequence_text",
+    "named": true
+  },
+  {
+    "type": "space",
     "named": true
   }
 ]

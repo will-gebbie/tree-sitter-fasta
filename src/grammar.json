@@ -14,24 +14,45 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "record_definition"
+          "name": "record_definition_description"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "record_definition_no_description"
         }
       ]
     },
-    "record_definition": {
+    "record_definition_description": {
       "type": "SEQ",
       "members": [
-        {
-          "type": "STRING",
-          "value": ">"
-        },
         {
           "type": "SYMBOL",
           "name": "id"
         },
         {
           "type": "SYMBOL",
+          "name": "space"
+        },
+        {
+          "type": "SYMBOL",
           "name": "description"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sequence"
+        }
+      ]
+    },
+    "record_definition_no_description": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "id"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "newline"
         },
         {
           "type": "SYMBOL",
@@ -60,10 +81,23 @@
       "type": "REPEAT1",
       "content": {
         "type": "SYMBOL",
-        "name": "sequence_combo"
+        "name": "sequence_choice"
       }
     },
-    "sequence_combo": {
+    "sequence_choice": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "sequence_newline"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sequence_EOF"
+        }
+      ]
+    },
+    "sequence_newline": {
       "type": "SEQ",
       "members": [
         {
@@ -76,9 +110,13 @@
         }
       ]
     },
+    "sequence_EOF": {
+      "type": "SYMBOL",
+      "name": "sequence_text"
+    },
     "id_text": {
       "type": "PATTERN",
-      "value": "[!-~]+"
+      "value": ">[!-=?-~]+"
     },
     "description_text": {
       "type": "PATTERN",
@@ -87,6 +125,10 @@
     "newline": {
       "type": "PATTERN",
       "value": "[\\r?\\n]"
+    },
+    "space": {
+      "type": "PATTERN",
+      "value": " +"
     },
     "sequence_text": {
       "type": "PATTERN",

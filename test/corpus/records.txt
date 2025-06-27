@@ -1,5 +1,5 @@
 ==================
-Records
+Simple Record
 ==================
 
 >CP01323.1 alien bacteria
@@ -8,13 +8,295 @@ ATGCAAATTTGGGCCC
 ---
 
 (source_file
-  (record_definition
+  (record_definition_description
     (id
       (id_text))
+    (space)
     (description
       (description_text)
       (newline))
     (sequence
-      (sequence_combo
-        (sequence_text)
-        (newline)))))
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))))))
+
+==================
+Multiple Simple Records
+==================
+
+>CP01323.1
+ATGCAAATTTGGGCCC
+>CP01373.1 alien bacteria X
+ATGCAAATTTGGGCCC
+ATGACTCGCGCCCGAA
+>CP01823.1 alien bacteria 576
+ATGCAAATTTGGGCCC
+
+---
+
+(source_file
+  (record_definition_no_description
+    (id
+      (id_text))
+    (newline)
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))))))
+
+==================
+Multiple Simple Records with inconsistent line sequence lengths
+==================
+
+>CP01323.1 alien bacteria
+ATGCAAATTTGGGCCCAAATTGGGCCTGTGTGTG
+>CP01373.1 alien bacteria X
+ATGCAAATTTGGGCCCAAA
+ATGACTCGCGCCCGAA
+>CP01823.1 alien bacteria 576
+ATGCAAATTTGGGCCC
+---
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+
+==================
+Multiple Simple Records with Newline Spacing
+==================
+
+>CP01323.1 alien bacteria
+ATGCAAATTTGGGCCC
+
+
+
+
+>CP01373.1 alien bacteria X
+ATGCAAATTTGGGCCC
+ATGACTCGCGCCCGAA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>CP01823.1 alien bacteria 576
+ATGCAAATTTGGGCCC
+---
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline)))))
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+
+==================
+Multi-line Record
+==================
+
+>CP01323.1 alien bacteria
+ATGCAAATTTGGGCCC
+ATGCAAATTGCATACC
+ATGCAAATTTGGGCCC
+ATGCAAATCCCGGCCC
+ATGCAAAAAAGGGCCC
+ATGGCTCATTTGGGCC
+---
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_EOF
+          (sequence_text))))))
+
+
+==================
+Multi-line Record with inconsistent sequence lengths
+==================
+
+>CP01323.1 alien bacteria
+ATGCAAATTTGGGCCCAAAA
+ATGCAAATTGCATACCGGGGGG
+ATGCAAATTTGGGCCCGTATATATATAGCTAG
+ATGCAAATCCCGGCCCGATGATGAT
+ATGCAAAAAAGGGCCCAA
+ATGGCTCATTTGGGCC
+
+---
+
+(source_file
+  (record_definition_description
+    (id
+      (id_text))
+    (space)
+    (description
+      (description_text)
+      (newline))
+    (sequence
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))) 
+      (sequence_choice
+        (sequence_newline
+          (sequence_text)
+          (newline))))))
+
+==================
+No Records
+==================
+---
+(source_file)

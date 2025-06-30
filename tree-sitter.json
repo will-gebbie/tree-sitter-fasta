@@ -8,7 +8,8 @@
       "scope": "source.fasta",
       "file-types": ["faa", "fna", "fasta", "ffn", "frn", "fa", "fas", "mpfa"],
       "injection-regex": "^fasta$",
-      "class-name": "TreeSitterFasta"
+      "class-name": "TreeSitterFasta",
+      "highlights": "queries/highlights.scm"
     }
   ],
   "metadata": {
@@ -36,4 +37,3 @@
     "zig": false
   }
 }
-

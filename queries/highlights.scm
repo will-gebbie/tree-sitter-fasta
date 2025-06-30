@@ -1,3 +1,3 @@
 (sequence) @string
-(id) @variable
-(description) @string.special
+(id) @keyword
+(description) @label

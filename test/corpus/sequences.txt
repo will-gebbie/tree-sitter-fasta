@@ -34,6 +34,17 @@ aCgturykMS-WBdHvN
           (sequence_text))))))
 
 ==================|||
+DNA (Mixed Case) with numbers
+:error
+==================|||
+
+>CP01323.1 alien bacteria
+AtGCa9At4tGGgCCC
+>All Possible Nucleotides
+aCgturykMS-WBdHvN83283
+---|||
+
+==================|||
 RNA (Mixed Case)
 ==================|||
 

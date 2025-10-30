@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tree-sitter-fasta"
 description = "Fasta file parser"
-version = "1.0.3"
+version = "1.0.4"
 keywords = ["incremental", "parsing", "tree-sitter", "fasta"]
 classifiers = [
   "Intended Audience :: Developers",

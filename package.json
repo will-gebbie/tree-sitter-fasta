@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-fasta",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fasta file parser",
   "repository": "https://github.com/will-gebbie/tree-sitter-fasta",
   "license": "MIT",

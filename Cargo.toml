@@ -1,7 +1,7 @@
 [package]
 name = "tree-sitter-fasta"
 description = "Fasta file parser"
-version = "1.0.4"
+version = "1.0.5"
 authors = ["Will Gebbie <will.gebbie777@gmail.com>"]
 license = "MIT"
 readme = "README.md"

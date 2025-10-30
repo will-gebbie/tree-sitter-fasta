@@ -1,6 +1,6 @@
 # tree-sitter-fasta
 
-[![CI][ci]](https://github.com/tree-sitter/tree-sitter-fasta/actions/workflows/ci.yml)
+[![CI][ci]](https://github.com/will-gebbie/tree-sitter-fasta/actions/workflows/ci.yml)
 [![crates][crates]](https://crates.io/crates/tree-sitter-fasta)
 [![npm][npm]](https://www.npmjs.com/package/tree-sitter-fasta)
 [![pypi][pypi]](https://pypi.org/project/tree-sitter-fasta)

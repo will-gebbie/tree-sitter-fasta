@@ -22,7 +22,7 @@ fasta grammar for [tree-sitter](https://github.com/tree-sitter).
 - .fas
 - .mpfa
 
-[ci]: https://github.com/will-gebbie/tree-sitter-fasta/actions/workflows/create-release.yml/badge.svg
+[ci]: https://github.com/will-gebbie/tree-sitter-fasta/actions/workflows/ci.yml/badge.svg
 [npm]: https://img.shields.io/npm/v/tree-sitter-fasta?logo=npm
 [crates]: https://img.shields.io/crates/v/tree-sitter-fasta?logo=rust
 [pypi]: https://img.shields.io/pypi/v/tree-sitter-fasta?logo=pypi&logoColor=ffd242

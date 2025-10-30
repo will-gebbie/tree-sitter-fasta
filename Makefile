@@ -4,7 +4,7 @@ endif
 
 LANGUAGE_NAME := tree-sitter-fasta
 HOMEPAGE_URL := https://github.com/will-gebbie/tree-sitter-fasta
-VERSION := 1.0.2
+VERSION := 1.0.3
 
 # repository
 SRC_DIR := src

@@ -1,4 +1,4 @@
-# tree-sitter-fasta
+# tree-sitter-fasta &#129516;
 
 [![CI][ci]](https://github.com/will-gebbie/tree-sitter-fasta/actions/workflows/ci.yml)
 [![crates][crates]](https://crates.io/crates/tree-sitter-fasta)
